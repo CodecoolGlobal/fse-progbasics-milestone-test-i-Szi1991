@@ -13,10 +13,24 @@ A user object in the received array will look like this:
 Calculate the average age of those users who are adults (above or equal 18). Return the result (as a number).
 You do not have to deal with the case, when there are only underage users in the list.
 
+Számítsa ki azon felhasználók átlagos életkorát, akik felnőttek (18 év felettiek). Adja vissza az eredményt (számként).
+Nem kell foglalkoznia azzal az esettel, amikor csak kiskorú felhasználók vannak a listában.
+
 */
 
 function averageAgeOfAdults(users) {
 
+  let totalAge =0;
+  let numberOfAdults =0;
+  for (const adults of users) {
+    if (adults.age >= 18) {
+      totalAge+= adults.age; 
+      numberOfAdults++; 
+    }
+  }
+  const averageAge = totalAge / numberOfAdults;
+  
+  return averageAge;
 }
 
 module.exports = averageAgeOfAdults;
