@@ -25,7 +25,7 @@ Lehetséges, hogy a rossz objektum tartalmazza a kulcs abakuszt, de hamis érté
 
 function findAbacus(array) {
 
-  for (let i =0; i < array.length; i++) {
+  for (let i = 0; i < array.length; i++) {
     if (array[i].abacus === true) {
       return i;
     }

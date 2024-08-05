@@ -17,15 +17,17 @@ Számolja meg azokat a felhasználókat, akiknél az isConfirmed kulcs értéke 
 Ha olyan tömböt kap, amely csak egy felhasználói objektumot tartalmaz, ahol az isConfirmed kulcs értéke igaz, akkor adjon vissza 1-et.
 */
 
+
 function countConfirmed(users) {
- let count =0;
- for (let i =0;i<users.length;i++){
-  if (users[i].isConfirmed === true){
-    count++;
+  let count = 0;
+  for (let i = 0;i < users.length;i++){
+    if (users[i].isConfirmed === true){
+      count++;
+    }
+
   }
 
- }
- return count;
+  return count;
 
 }
 

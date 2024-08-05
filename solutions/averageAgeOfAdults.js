@@ -20,16 +20,18 @@ Nem kell foglalkoznia azzal az esettel, amikor csak kiskorú felhasználók vann
 
 function averageAgeOfAdults(users) {
 
-  let totalAge =0;
-  let numberOfAdults =0;
+  let totalAge = 0;
+  let numberOfAdults = 0;
+
   for (const adults of users) {
     if (adults.age >= 18) {
-      totalAge+= adults.age; 
-      numberOfAdults++; 
+      totalAge += adults.age;
+      numberOfAdults++;
     }
   }
+
   const averageAge = totalAge / numberOfAdults;
-  
+
   return averageAge;
 }
 
